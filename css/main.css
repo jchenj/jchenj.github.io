@@ -35,6 +35,15 @@ p {
   color: #333;
 }
 
+ul {
+  margin: 20px auto 40px;
+  font-size: 1.5em;
+}
+
+ul li {
+  list-style: none;
+}
+
 footer {
   border-top: 1px solid #d5d5d5;
   font-size: 1em;
@@ -48,7 +57,3 @@ ul.posts {
 ul.posts li {
   list-style: none;
 }
-    
-  
-  
-  
