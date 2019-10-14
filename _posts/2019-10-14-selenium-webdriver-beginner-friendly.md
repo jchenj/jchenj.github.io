@@ -18,7 +18,7 @@ I wasn't keen on the idea of downgrading Firefox, so I looked more closely at th
 I checked to see whether Chrome has a web driver, and sure enough, I found the [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/). The [instructions](https://sites.google.com/a/chromium.org/chromedriver/getting-started) for ChromeDriver were much more straighforward: I checked my current Chrome version (77) and downloaded the corresponding ChromeDriver version. I put the downloaded driver on my desktop. The only other thing I needed to do was to include the path to ChromeDriver when instantiating webdriver.Chrome as follows:
 
 `>>> from selenium import webdriver`\\
-`>>> browser = webdriver.Chrome('/Users/jchen/Desktop/chromedriver')`\\
+`>>> browser = webdriver.Chrome('/Users/jchen/Desktop/chromedriver')`
 
 Once I did that, I was able to follow the further instructions in *Automate the Boring Stuff* to open a browser window and proceed with my adventures in webscraping. While this issue took a little time to figure out, the takeaway for me was that once I've looked closely at possible solutions to an issue and understood their tradeoffs, it can work well to go with the solution that I am most comfortable with given my current skill level. 
 
