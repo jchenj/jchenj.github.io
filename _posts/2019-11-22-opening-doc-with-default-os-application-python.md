@@ -9,8 +9,8 @@ In Chapter 15 of ABS, the author suggests the following for opening documents wi
 `>>> subprocess.Popen(['start', 'filename'], shell=True)`
 
 When this didn't work for me, I searched for alternatives and found two that worked for me: 
->>> import subprocess
->>> subprocess.run(['open', 'filename'], check=True)
+`>>> import subprocess`\\
+`>>> subprocess.run(['open', 'filename'], check=True)`
 
->>> import os
->>> os.popen('open filename')
+`>>> import os`\\
+`>>> os.popen('open filename')`
