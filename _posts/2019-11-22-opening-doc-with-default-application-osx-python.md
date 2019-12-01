@@ -9,7 +9,7 @@ In [Chapter 15 of ABS](https://automatetheboringstuff.com/chapter15/), the autho
 `>>> import subprocess`\\
 `>>> subprocess.Popen(['start', 'filename'])`
 
-In addition to this, I found two alternatives that worked for me on [Stack Overflow post (https://stackoverflow.com/questions/434597/open-document-with-default-os-application-in-python-both-in-windows-and-mac-os): 
+In addition to this, I found two alternatives that worked for me on a [Stack Overflow post] (https://stackoverflow.com/questions/434597/open-document-with-default-os-application-in-python-both-in-windows-and-mac-os): 
 
 `>>> import subprocess`\\
 `>>> subprocess.run(['open', 'filename'], check=True)`
