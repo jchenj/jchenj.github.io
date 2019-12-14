@@ -21,5 +21,5 @@ of *Car* called *Sedan* that has four doors and another subclass called *Hatchba
 needs.<br>
 **Want to know** <br>
 * I'd like to see how classes are used more practically in writing programs. I understand the car example conceptually, but it 
-doesn't seem very useful at this point.
+doesn't seem very useful at this point.<br>
 **Learned** <br>
