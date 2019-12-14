@@ -18,8 +18,8 @@ attributes. For example, the class *Car* might have four wheels.
 * A programmer can build new objects based on the class of car, and can also make subclasses. For example, there might be a subclass
 of *Car* called *Sedan* that has four doors and another subclass called *Hatchback* that has two doors.
 * The advantage of classes is that it allows programmers to avoid duplicating code by writing a class once and building on it for additional
-needs.
-**Want to know**
+needs.<br>
+**Want to know** <br>
 * I'd like to see how classes are used more practically in writing programs. I understand the car example conceptually, but it 
 doesn't seem very useful at this point.
-**Learned**
+**Learned** <br>
