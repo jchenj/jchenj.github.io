@@ -25,4 +25,5 @@ needs.<br>
 doesn't seem very useful at this point.<br>
 
 **Learned** <br>
-* *What is \__init__()?* This is a special method. For a class includes a \__init__() method, when the class is instantiated, \__init__() is immediately invoked for the new class instance. __init__() always includes a *self* argument (i.e. \__init__(self), but can include additional arguments if desired. 
+* *What is \__init__()?* This is a special method. For a class includes a \__init__() method, when the class is instantiated, \__init__() is immediately invoked for the new class instance. \__init__() always includes a *self* argument - i.e. \__init__(self) - but can include additional arguments if desired. 
+* *Why should one not use mutable objects (e.g. lists and dictionaries) as class variables?* When values are added to mutable objects in class values, all values are shared with all instance variables, which may not be desired. To avoid this, instance variables should be used for mutable objects, so that each instance will only have the values assigned to it. 
