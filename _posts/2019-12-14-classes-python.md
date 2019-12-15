@@ -25,3 +25,4 @@ needs.<br>
 doesn't seem very useful at this point.<br>
 
 **Learned** <br>
+* *What is __init__()?* This is a special method. For a class includes a __init__() method, when the class is instantiated, __init__() is immediately invoked for the new class instance. __init__() always includes a *self* argument (i.e. __init__(self), but can include additional arguments if desired. 
