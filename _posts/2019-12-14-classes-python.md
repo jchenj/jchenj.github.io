@@ -28,6 +28,7 @@ needs.<br>
 * *Why should one not use mutable objects (e.g. lists and dictionaries) as class variables?* When values are added to mutable objects in class values, all values are shared with all instance variables, which may not be desired. To avoid this, instance variables should be used for mutable objects, so that each instance will only have the values assigned to it. 
 * *What is iter()?* iter() is a function that returns an iterator object. It defines the method \__next__() which accesses the elements in the container one item at the time. When there are no more elements, \__next__() raises the StopIteration error. 
 * *What is an iterator?* An iterator is an object that can be iterated on. In Python it is an object that implements the iterator protocol, which consists of the two methods \__iter__() and \__next__(). 
+* *What are generators?* Generators are tools that create iterators. 
 
 
 **For the future** <br>
