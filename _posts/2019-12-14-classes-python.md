@@ -21,9 +21,12 @@ of *Car* called *Sedan* that has four doors and another subclass called *Hatchba
 needs.<br>
 
 **Want to know** <br>
-* I'd like to see how classes are used more practically in writing programs. I understand the car example conceptually, but it 
-doesn't seem very useful at this point.<br>
+* I'd like to see how classes are used more practically in writing programs. I understand the car example conceptually, but it doesn't seem very useful at this point.<br>
 
 **Learned** <br>
 * *What is \__init__()?* This is a special method. For a class includes a \__init__() method, when the class is instantiated, \__init__() is immediately invoked for the new class instance. \__init__() always includes a *self* argument - i.e. \__init__(self) - but can include additional arguments if desired. 
 * *Why should one not use mutable objects (e.g. lists and dictionaries) as class variables?* When values are added to mutable objects in class values, all values are shared with all instance variables, which may not be desired. To avoid this, instance variables should be used for mutable objects, so that each instance will only have the values assigned to it. 
+* *What is iter()?* iter() is a function that returns an iterator object. It defines the method \__next__() which accesses the elements in the container one item at the time. When there are no more elements, \__next__() raises the StopIteration error. 
+
+**For the future** <br>
+* Private variables - When are they used? What exactly is name mangling? 
