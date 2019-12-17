@@ -32,7 +32,7 @@ the Boring Stuff with Python*:
 * zipfile
 
 
-That's 19 modules so far - and I might have used a few more when working through other tutorials, etc. 
+That's nineteen modules so far - and I might have used a few more when working through other tutorials, etc. 
 
 
 By going through this section, I'm looking forward to: 
@@ -41,3 +41,15 @@ By going through this section, I'm looking forward to:
 2. Learn more about modules I have used before, and 
 3. Learn more about the history, structure and future prospects for the standard library
 
+---
+What I learned about:
+
+## New (to me) modules:
+
+### os
+* This is one of the modules I've been using most frequently, especially os.getcwd() and os.chdir()
+* One issues - changing wo copying whole path
+
+## Modules I'd used before:
+
+## The history, structure & future prospects of the Python standard library
