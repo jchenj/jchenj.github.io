@@ -41,15 +41,24 @@ By going through this section, I'm looking forward to:
 2. Learn more about modules I have used before, and 
 3. Learn more about the history, structure and future prospects for the standard library
 
+
 ---
-What I learned about:
+# What I learned about:
 
 ## New (to me) modules:
-
-### os
-* This is one of the modules I've been using most frequently, especially os.getcwd() and os.chdir()
-* One issues - changing wo copying whole path
+### glob
+* glob.glob(*pathname*) returns a list of all pathnames in the current working directory that match the specified pattern. 
 
 ## Modules I'd used before:
+### os
+* This is one of the modules I've been using most frequently, especially os.getcwd() and os.chdir()
+* Before today I haven't known how to specify the new desired path in os.chdir() using a relative path. Today I learned how to do this. os.chdir(*'./folder-name'*) changes the current working directory (CWD) to the specified folder within the current directory. os.chdir(*'../folder-name'*) changes the CWD to the specified folder within the parent folder of the current directory.
+* I clarified that for relative paths there are only *dot* (.) and *dot-dot* (..) folders. I had thought that there could be an arbitary number of dots - e.g. *dot-dot-dot* (...) - but this is not true, at least from what I see looking back at *ABS*.
+* os.system(command) - Executes the command (which is a string) in a subshell. This is still unclear to me. What's a subshell? 
+* Reminded to use dir(*module-name*) to get a directory of all functions in a module, and help(*module-name*)to get a manual page from the module's docstring.
 
-## The history, structure & future prospects of the Python standard library
+
+## shutil
+* For daily file & directory management, shutil is easier to use than os 
+
+## History, structure & future prospects of the Python standard library:
