@@ -46,8 +46,17 @@ By going through this section, I'm looking forward to:
 # What I learned about:
 
 ## New (to me) modules:
+### argparse
+* argparse provides more sophisticated ways tow work with command line arguments than sys.argv
+
 ### glob
-* glob.glob(*pathname*) returns a list of all pathnames in the current working directory that match the specified pattern. 
+* glob.glob(*pathname*) returns a list of all pathnames in the current working directory that match the specified pattern.
+
+## statistics
+* The statistics module calculates various basic statistical properties (e.g. mean, median, variance) of a given list of numeric data
+
+## urllib.request
+* The requests module provides the same functionality as this module, I think, but is easier to use
 
 ## Modules I'd used before:
 ### os
@@ -57,8 +66,16 @@ By going through this section, I'm looking forward to:
 * os.system(command) - Executes the command (which is a string) in a subshell. This is still unclear to me. What's a subshell? 
 * Reminded to use dir(*module-name*) to get a directory of all functions in a module, and help(*module-name*)to get a manual page from the module's docstring.
 
+# random
+* The function random.choice(*[list]*) chooses a random value from the given list.
+
+## re
+* String methods are preferred to re for simple tasks because they are easier to read and debug
 
 ## shutil
 * For daily file & directory management, shutil is easier to use than os 
+
+## sys
+* The most direct way to terminate a script is sys.exit()
 
 ## History, structure & future prospects of the Python standard library:
