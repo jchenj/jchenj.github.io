@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Brief Tour of the Standard Library"
+title: "Brief Tour of the Standard Library, Part I"
 date: 2019-12-17
 ---
 
-Today I started working through Chapter 10 of the Python Tutorial (3.7.5), *Brief Tour of the Standard Library*. 
+Today I worked through Chapter 10 of the Python Tutorial (3.7.5), *Brief Tour of the Standard Library*. 
 
 
 I have already used the following modules from the standard library by completing through half of Chapter 16 of *Automate 
@@ -62,6 +62,10 @@ By going through this section, I'm looking forward to:
 ### timeit
 * This module is used for performance measurement 
 
+### unittest
+* This module includes a more comprehensive set of tests than doctest
+
+
 ### urllib.request
 * The requests module provides the same functionality as this module, I think, but is easier to use
 
@@ -92,3 +96,4 @@ By going through this section, I'm looking forward to:
 
 
 ## History, structure & future prospects of the Python standard library:
+* The tutorial didn't address this explictly. I'll look to learn about this as I read more & go to events, talk to people, etc. 
