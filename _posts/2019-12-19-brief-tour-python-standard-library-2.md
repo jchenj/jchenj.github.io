@@ -18,6 +18,9 @@ The second part of the tour of the Python standard library covers more advanced 
 
 * Can set the locale and format string's according to the conventions of that locale
 
+### string
+* *class* string.Template(*template*) uses the $ character to begin placeholder names when creating a template  
+
 ## Modules I've worked with previously:
 ### pprint
 * Can specify max. width of printed result in second argument - pprint.pprint(*object, max. width*)
