@@ -10,13 +10,24 @@ The second part of the tour of the Python standard library covers more advanced 
 ### array
 * Provides an array object, which is like a list but stores only homogenous data and stores it more compactly.
 * Python int objects are usually 16 bytes per entry
-* For example, an array of numbers could be stored as two byte unsigned binary numbers (tyoeode 'H')
+* For example, an array of numbers could be stored as two byte unsigned binary numbers (typecode 'H')
+
+### bisect
+* Functions for manipulating sorted lists
 
 ### collections
-* **START HERE** 
+* A module with specialized container datatypes (alternatives to those containers built-in with Python).
+* Example: deque() is a list-like object with faster appends & pops but slower lookups in the middle.
+
+### decimal
+* Support for decimal floating point arithmetic. Offers several advantages to float datatype.
 
 ### gc
 * Provides an interface to the optional garbage collector
+
+### heapq
+* Functions for implementing heaps based on regular lists
+* A heap is a specialized tree-based data structure where any node has a lower value than any of its children
 
 ### locale
 * Accesses a library of locale-specific data formats
