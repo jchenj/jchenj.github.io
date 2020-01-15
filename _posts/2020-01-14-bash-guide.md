@@ -2,7 +2,8 @@
 
 ---
 
-Notes on The Bash Guide: A quality driven guide through the shell's many features https://guide.bash.academy/#toc0
+Notes on [The Bash Guide: A quality driven guide through the shell's many features](https://guide.bash.academy/#toc0)
+
 ### Important commands (all chapters)
 * `bash` - start  bash in most shells/terminals (if it's not already running)
 * `cat [filename]` - show contents of file
