@@ -1,5 +1,7 @@
 ---
-
+layout: post
+title: "A beginner-friendly way to import a web driver for Selenium"
+date: 2020-01-14
 ---
 
 Notes on [The Bash Guide: A quality driven guide through the shell's many features](https://guide.bash.academy/#toc0)
