@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A beginner-friendly way to import a web driver for Selenium"
+title: "Intro to Bash"
 date: 2020-01-14
 ---
 
