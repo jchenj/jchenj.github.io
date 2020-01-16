@@ -38,7 +38,7 @@ By going through this section, I'm looking forward to:
 3. Learn more about the history, structure and future prospects for the standard library
 
 ---
-##New (to me) modules:##
+## New (to me) modules:
 ### `argparse`
 * `argparse` provides more sophisticated ways tow work with command line arguments than `sys.argv`
 
@@ -65,7 +65,7 @@ By going through this section, I'm looking forward to:
 * Module for data compression.
 * `zlib.compress(*data, level*)` takes a byte-like object for the data, not a string. To make a bytes-like object from a string, put a 'b' in front of the string. (e.g. `s = b'This will produce a bytes-like object'`)
 
-**Modules I'd used before:**
+## Modules I'd used before:
 ### os
 * This is one of the modules I've been using most frequently, especially `os.getcwd()` and `os.chdir()`
 * Before today I haven't known how to specify the new desired path in `os.chdir()` using a relative path. Today I learned how to do this. `os.chdir(*'./folder-name'*)` changes the current working directory (CWD) to the specified folder within the current directory. `os.chdir(*'../folder-name'*)` changes the CWD to the specified folder within the parent folder of the current directory.
