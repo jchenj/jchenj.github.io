@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Brief Tour of the Standard Library, Part I"
+title: "Brief Tour of the Standard Library I"
 date: 2019-12-17
 ---
 
