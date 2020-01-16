@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Brief Tour of the Standard Library, Part II
+title: Brief Tour of the Standard Library II
 date: 2019-12-19
 ---
 
