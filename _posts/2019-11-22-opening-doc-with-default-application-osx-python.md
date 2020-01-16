@@ -4,7 +4,7 @@ title: "Opening documents with default applications in OS X using Python"
 date: 2019-11-22
 ---
 
-In [Chapter 15 of ABS](https://automatetheboringstuff.com/chapter15/), the author suggests the following for opening documents with default application in OS using Python:
+In [Chapter 15 of ABS](https://automatetheboringstuff.com/chapter15/), the author suggests the following for opening documents with a default application in OS using Python:
 
 `>>> import subprocess`\\
 `>>> subprocess.Popen(['start', 'filename'])`
