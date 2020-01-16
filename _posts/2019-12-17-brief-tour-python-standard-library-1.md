@@ -38,7 +38,7 @@ By going through this section, I'm looking forward to:
 3. Learn more about the history, structure and future prospects for the standard library
 
 ---
-**New (to me) modules:**
+##New (to me) modules:##
 ### `argparse`
 * `argparse` provides more sophisticated ways tow work with command line arguments than `sys.argv`
 
