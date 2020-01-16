@@ -15,9 +15,9 @@ Notes on [The Bash Guide: A quality driven guide through the shell's many featur
 * **duplicating file descriptors** - copying one FD's stream connection to another FD. Use the `>&` operator, preceded by FD to change and followed by FD whose stream to copy
 * **file descriptor (FD)** - "plug" to connect processes to files, devices or other processes. They are identified by numbers. The first three have standard names:
 
-...0 - standard input (e.g. keyboard). 
-...1 - standard output (e.g. window within display). Redirecting FD1 is done with `>` operator.
-...2 - standard error (where errors & info messages are sent to - e.g. also display)
+0 - standard input (e.g. keyboard). 
+1 - standard output (e.g. window within display). Redirecting FD1 is done with `>` operator.
+2 - standard error (where errors & info messages are sent to - e.g. also display)
 
 * **kernel** - the core part of the computer's operating system, and has control over everything else in the system
 * **PATH** - an environment variable that contains a set of directories that should be searched for programs. The PATH variable can be updated. 
@@ -50,7 +50,6 @@ Notes on [The Bash Guide: A quality driven guide through the shell's many featur
 * **Here string** - understand use of (making FD0 Standard Input read from string between two delimiters)
 
 ### Ch. 1: Inception - What is bash and where does it live? 
-**What was new / interesting?**
 * Each shell program has its own language
 * A binary is an executable program that contains binary code executed by the system's kernel
 * Windows doesn't come with bash installed
@@ -59,7 +58,6 @@ Notes on [The Bash Guide: A quality driven guide through the shell's many featur
 * When a program is run, the system creates a running process for it. Processes have plugs (file descriptors) that allow them to connect streams that lead to files, devices or other programs
 
 ### Ch.2  Commands & Arguments
-**What was new / interesting?**
 * Most command execution in bash is synchronous - one command must finish executing before it will execute the next command 
 * The hashbang line at the top of a bash script `/usr/bin/env bash` commands the `env` program to find the `bash` program 
 and use it for interpreting the language in the script
@@ -76,6 +74,5 @@ and use it for interpreting the language in the script
 * To send both output and error bytes to a file, need to make sure they're on the same stream by duplicating file descriptors
 
 ### Ch. 3 - Variables & Expansions
-**What was new / interesting?**
 * 
 
