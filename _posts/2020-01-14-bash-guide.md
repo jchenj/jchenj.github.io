@@ -74,5 +74,11 @@ and use it for interpreting the language in the script
 * To send both output and error bytes to a file, need to make sure they're on the same stream by duplicating file descriptors
 
 ### Ch. 3 - Variables & Expansions
-* 
+* Lost notes from the first half of the chapter :( 
+* Shell variables are stored in the process environment 
+* Environment varibales are more general than shell variables
+* Users can modify/add to both shell & environment variables
+* All processes share environment varaibles. Some programs only use some of them. 
+
+
 
