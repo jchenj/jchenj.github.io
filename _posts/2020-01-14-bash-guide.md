@@ -19,11 +19,13 @@ Notes on [The Bash Guide: A quality driven guide through the shell's many featur
 1 - standard output (e.g. window within display). Redirecting FD1 is done with `>` operator.
 2 - standard error (where errors & info messages are sent to - e.g. also display)
 
+* **array** - parameter that can hold a list of strings
 * **kernel** - the core part of the computer's operating system, and has control over everything else in the system
 * **PATH** - an environment variable that contains a set of directories that should be searched for programs. The PATH variable can be updated. 
 * **pipeline** - connect two commands by the linking the first process' standard output to the second's standard input
 * **positional parameters** - parameters with a number - e.g. $1 - where the number is the argument number
 * **redirections** - operations that change the source or destination of a file descriptor (e.g. write the result of a command to a file instead of to the terminal display). Redirecting standard output (FD1) to a file is most common redirection. Redirect any FD by prefixing the `>` operator with the number of the FD (e.g. `2>` to redirect standard error). Redirections are evaluated from L to R.
+* **shell internal variables** - shell variables created automatically by the bash shell. They are in ALL CAPS. 
 * **simple commands** - specifies name of command, with optional arguments, environment variables and file descriptor redirections
 * **streams** - flows of info (bytes) between files, devices & processes
 * **terminal multiplexer** - program that can run several login sessions in the same terminal window 
@@ -42,7 +44,9 @@ Notes on [The Bash Guide: A quality driven guide through the shell's many featur
 * `type \[name]` - returns the location of the specified program \[name]
 
 ### Important switches (all chapters)
+[List of swiches](https://www.tldp.org/LDP/abs/html/options.html)
 * `-a` - show all the possibilities
+* `-c` - copy from a string
 
 ### What to follow up on (all chapters)
 * More practice with adding/removing items from the PATH
@@ -80,8 +84,10 @@ and use it for interpreting the language in the script
 * Environment varibales are more general than shell variables
 * Users can modify/add to both shell & environment variables
 * All processes share environment varaibles. Some programs only use some of them. 
+* Use single quotes to wrap strings (not double)
+* Use `\` to resume on a new line
+* Give your own shell variables lowercase names & environment variables uppercase
+* Important to include space in front of negative start values
 
 ### General notes
 * To run a bash script, looks like one can use `bash [file] [args]` or `[file] [args]`
-
-
