@@ -22,6 +22,7 @@ Notes on [The Bash Guide: A quality driven guide through the shell's many featur
 * **kernel** - the core part of the computer's operating system, and has control over everything else in the system
 * **PATH** - an environment variable that contains a set of directories that should be searched for programs. The PATH variable can be updated. 
 * **pipeline** - connect two commands by the linking the first process' standard output to the second's standard input
+* **positional parameters** - parameters with a number - e.g. $1 - where the number is the argument number
 * **redirections** - operations that change the source or destination of a file descriptor (e.g. write the result of a command to a file instead of to the terminal display). Redirecting standard output (FD1) to a file is most common redirection. Redirect any FD by prefixing the `>` operator with the number of the FD (e.g. `2>` to redirect standard error). Redirections are evaluated from L to R.
 * **simple commands** - specifies name of command, with optional arguments, environment variables and file descriptor redirections
 * **streams** - flows of info (bytes) between files, devices & processes
@@ -80,5 +81,7 @@ and use it for interpreting the language in the script
 * Users can modify/add to both shell & environment variables
 * All processes share environment varaibles. Some programs only use some of them. 
 
+### General notes
+* To run a bash script, looks like one can use `bash [file] [args]` or `[file] [args]`
 
 
