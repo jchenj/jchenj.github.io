@@ -89,5 +89,21 @@ and use it for interpreting the language in the script
 * Give your own shell variables lowercase names & environment variables uppercase
 * Important to include space in front of negative start values
 
+### Tests & Conditionals
+
+### Loops & Functions
+
+### Asynchronous Commands
+
+### Colors & Terminal Commands
+
+### Customizing the Prompt
+
+### Advanced Topics
+
+### Recommendations & Pitfalls
+
+### Noteworthy External Tools
+
 ### General notes
 * To run a bash script, looks like one can use `bash [file] [args]` or `[file] [args]`
