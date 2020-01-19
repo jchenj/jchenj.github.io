@@ -1,3 +1,7 @@
+---
+
+----
+
 Today I picked up working on a photo album site I started late last year. Leading up to today I'd written two Python scripts for the project - one to create an HTML page for each image, and the other to create an index page with a link to each image's page. 
 
 My goals for today were 1) to improve the index page by replacing the text link with a thumbnail image link and 2) to add a link from each image page back to the index. 
