@@ -15,9 +15,9 @@ Notes on [The Bash Guide: A quality driven guide through the shell's many featur
 * **duplicating file descriptors** - copying one FD's stream connection to another FD. Use the `>&` operator, preceded by FD to change and followed by FD whose stream to copy
 * **file descriptor (FD)** - "plug" to connect processes to files, devices or other processes. They are identified by numbers. The first three have standard names:
 
-0 - standard input (e.g. keyboard). 
-1 - standard output (e.g. window within display). Redirecting FD1 is done with `>` operator.
-2 - standard error (where errors & info messages are sent to - e.g. also display)
+0 - standard input (e.g. keyboard). \\
+1 - standard output (e.g. window within display). Redirecting FD1 is done with `>` operator.\\
+2 - standard error (where errors & info messages are sent to - e.g. also display)\\
 
 * **array** - parameter that can hold a list of strings
 * **kernel** - the core part of the computer's operating system, and has control over everything else in the system
@@ -90,6 +90,7 @@ and use it for interpreting the language in the script
 * Important to include space in front of negative start values
 
 ### Tests & Conditionals
+
 
 ### Loops & Functions
 
