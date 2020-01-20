@@ -90,6 +90,7 @@ and use it for interpreting the language in the script
 * Important to include space in front of negative start values
 
 ### Tests & Conditionals
+* A branch is only executed if its exit code 0 (success).
 
 
 ### Loops & Functions
