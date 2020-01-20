@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Project update: Photo album, Jan. 17
-date: 2020-01-17
+title: Project update: Photo album, Jan. 18
+date: 2020-01-18
 ---
 
 Today I picked up working on a photo album site I started late last year. Leading up to today I'd written two Python scripts for the project - one to create an HTML page for each image, and the other to create an index page with a link to each image's page. 
