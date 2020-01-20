@@ -12,8 +12,12 @@ date: 2020-01-20
 * To run the code with other values for parameters, I ran Python in the terminal and imported the script:
 `python3 #run Python \\
 import makeIndex  # import name of script without '.py'
-makeIndex.makeIndex('./other-photos', 'jpg') # call function with desired values as parameters
+makeIndex.makeIndex('./other-photos', 'jpg') # call function with desired values as parameters`
 
 **Challenges**
+
+**Future work**
+* Better understand how to format docstrings to describe useage, parameters, etc.
+
 
 
