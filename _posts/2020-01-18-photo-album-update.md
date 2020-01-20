@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Photo album project update"
+title: "Photo album update"
 date: 2020-01-18
 ---
 
