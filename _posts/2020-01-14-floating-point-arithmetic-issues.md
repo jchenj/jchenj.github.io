@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Floating Point Arithmetic Issues & Limitations
+title: "Floating Point Arithmetic Issues & Limitations"
 date: 2020-01-14
 ---
 
