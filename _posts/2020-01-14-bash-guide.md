@@ -3,6 +3,16 @@ layout: post
 title: "Intro to Bash"
 date: 2020-01-14
 ---
+Next: 
+Compound command
+Job control 
+Parameters
+Patterns
+Arrays
+IO
+Sourcing
+Practices
+
 
 Notes on [The Bash Guide: A quality driven guide through the shell's many features](https://guide.bash.academy/#toc0)
 
@@ -36,6 +46,7 @@ Notes on [The Bash Guide: A quality driven guide through the shell's many featur
 ### Important commands (all chapters)
 * `bash` - start  bash in most shells/terminals (if it's not already running)
 * `break` - jump out of loop & continue with script after it
+* `case` - evaluates a parameter's value against several given patterns/choices`
 * `cat [filename]` - show contents of file
 * `cp` - copy a file
 * `chmod +x [filename]` - marks a file as executable
@@ -47,6 +58,7 @@ Notes on [The Bash Guide: A quality driven guide through the shell's many featur
 * `fi` - closes an if statement and starts the command
 * `grep` - checks input for patterns
 * `rev` - reverses a string/line
+*  `select` - offers the user a choice of several options & executes a code block with the user's choice as the parameter. Menu repeats until `break` command is executed.
 * `test` (`[ ]`) - tests things & returns an exit status based on results.
 * `type \[name]` - returns the location of the specified program \[name]
 
@@ -112,26 +124,31 @@ and use it for interpreting the language in the script
 * Use `while` loop when you want to keep going until you find what you're looking for
 * When then are multiple ways to write something, compare the flexibility & simplicity of the resulting code
 * `until` loop not used often - more common to use `while !`
-
- 
-
-
-
-
+* `choice` and `select` are used for building an application logic based on the content of a variable in a more streamlined way than using a seris of `if` statements
 
 ### Loops & Functions
+Iterating commands using for loops, while and until loops, select statements and grouping them in functions.
+(Ch. 9 in PDF - compound commands)
 
 ### Asynchronous Commands
+About jobs, asynchronous commands, job control, process identifiers and signals, process management, inter-process communications.
+(Ch 11 in PDF - job control)
 
 ### Colors & Terminal Commands
+Terminals and terminal sequences, terminal identifiers, terminfo and terminal capabilities, outputting colors, moving the cursor and querying the terminal's state.
+(Not in PDF)
 
 ### Customizing the Prompt
+Prompting, prompt commands and the DEBUG signal, readline, bind and input modes and hotkeys, programmatic command completion.
 
 ### Advanced Topics
+About syntax sugar, specific use cases and shell tricks.
 
 ### Recommendations & Pitfalls
+How to do things well and how to do things very, very badly.
 
 ### Noteworthy External Tools
+Bash is limited, but augmented by a powerful toolset.
 
 ### General notes
 * To run a bash script, looks like one can use `bash [file] [args]` or `[file] [args]`
