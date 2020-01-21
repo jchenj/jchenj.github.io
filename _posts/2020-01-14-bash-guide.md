@@ -6,12 +6,15 @@ date: 2020-01-14
 
 Notes on [The Bash Guide: A quality driven guide through the shell's many features](https://guide.bash.academy/#toc0)
 
+### Bash resources
+[Bash FAQs](https://mywiki.wooledge.org/BashFAQ)
+
 ### Key new terms (all chapters)
 * **append mode** - file's original content is retained and new stream's bytes are added to it. E.g. `echo World >>~/world`
 * **builtin** - small operations built into bash
 * **byte** - unit of digital info; eight bits
 * **compound command** - several basic commands grouped into a larger logical block (e.g. an *if* command)
-* **control operator** - tells bash how preceding command should be executed. (Comes after command in list of commands.) (e.g. ';' means start a new line, '||' means run subsequent command only if preceding command failed
+* **control operator** - tells bash how preceding command should be executed. (Comes after command in list of commands.) (e.g. `;` - start a new line, `||` - run subsequent command only if preceding command failed, `&&` - logical AND
 * **duplicating file descriptors** - copying one FD's stream connection to another FD. Use the `>&` operator, preceded by FD to change and followed by FD whose stream to copy
 * **file descriptor (FD)** - "plug" to connect processes to files, devices or other processes. They are identified by numbers. The first three have standard names:
 
@@ -32,15 +35,19 @@ Notes on [The Bash Guide: A quality driven guide through the shell's many featur
 
 ### Important commands (all chapters)
 * `bash` - start  bash in most shells/terminals (if it's not already running)
+* `break` - jump out of loop & continue with script after it
 * `cat [filename]` - show contents of file
 * `cp` - copy a file
 * `chmod +x [filename]` - marks a file as executable
+* `continue` - skips to next iteration of loop
 * `coproc` - allows you to run a command asynchronously ('in the background')
 * *CTRL-C* - stops running process 
 * `echo "$BASH_VERSION` - check what version of bash currently running
 * `expansions` - e.g `$variable` or `$(command)` - TO BE COMPLETED
 * `fi` - closes an if statement and starts the command
+* `grep` - checks input for patterns
 * `rev` - reverses a string/line
+* `test` (`[ ]`) - tests things & returns an exit status based on results.
 * `type \[name]` - returns the location of the specified program \[name]
 
 ### Important switches (all chapters)
@@ -94,6 +101,21 @@ and use it for interpreting the language in the script
 * A branch is only executed if its exit code 0 (success).
 * In conditional command lists, the data gathering command can either precede the `if` statement or be integrated with it. Both options come with pros and cons. 
 * Syntax for equality test using `[[ ]]` is `[[ arg = arg ]]`. The spacing between commands and args are important!
+* OK to string together `&&` operators, but otherwise best not to string together multiple control operators.
+* Group statements together with curly braces `{ ;}` to avoid failures of logic. (NEED SEMICOLON/NEWLINE before closing curly brace!)
+* Can use grouping for purposes besides conditonal operators (e.g. redirecting input to a group of statements, specifying multiple steps in error handling)
+* `if` not needed to run `test`/ `[]` command
+* `[[ ]]` is a new style of conditional testing that has several advantages to `[ ]`. For example, it supports pattern matching.
+* Be aware of when to use `[[` and when to use `[`
+* Never use `-a` and `-o` tests with `[`
+* Use `for` loop when you have a list of things & want to run through them sequentiall 
+* Use `while` loop when you want to keep going until you find what you're looking for
+* When then are multiple ways to write something, compare the flexibility & simplicity of the resulting code
+* `until` loop not used often - more common to use `while !`
+
+ 
+
+
 
 
 
