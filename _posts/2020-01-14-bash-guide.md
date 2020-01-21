@@ -90,7 +90,11 @@ and use it for interpreting the language in the script
 * Important to include space in front of negative start values
 
 ### Tests & Conditionals
+* Exit codes are between 0 - 255 inclusive. 0 indicates success; all other numbers indicate failures of some sort.
 * A branch is only executed if its exit code 0 (success).
+* In conditional command lists, the data gathering command can either precede the `if` statement or be integrated with it. Both options come with pros and cons. 
+* Syntax for equality test using `[[ ]]` is `[[ arg = arg ]]`. The spacing between commands and args are important!
+
 
 
 ### Loops & Functions
@@ -109,3 +113,4 @@ and use it for interpreting the language in the script
 
 ### General notes
 * To run a bash script, looks like one can use `bash [file] [args]` or `[file] [args]`
+* To exit `man` page, enter `q`
