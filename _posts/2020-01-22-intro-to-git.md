@@ -3,6 +3,9 @@ layout: posts
 title: Intro to Git
 date: 2020-01-22
 ---
+Resources:
+Git tutorial
+[Git Tutorial for Beginners: Command-Line Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4) 
 
 ###Previous experience
 Have git hub account
@@ -11,6 +14,11 @@ Have git hub account
 
 ###Today I did:
 * Updated command line tools after Catalina update so I could use git in terminal
+
+Learned:
+* Running git version 2.21 (Apple Git-122.3) Found this with `git --version`
+* Setting global config variable:
+
 ## Local:
 * Practice with:
 `git commit <branch-name>`
