@@ -27,7 +27,7 @@ Anyway, prior to today I'd had seen a demo of Git from the command line and list
 ### Working locally
 * Create branch - `git branch <branch-name>`
 * Commit to branch - `git commit <branch-name>` 
-* Force branch move - `git branch -f <name-of-branch-to-move> <target-location>
+* Force branch move - `git branch -f <name-of-branch-to-move> <target-location>`
 * Start working on branch -`git checkout <branch-name>`
 * Create a new branch & checkout in one command - `git checkout -b <branch-name>`
 * Move HEAD to specified commit -`git checkout <commit-name>`
