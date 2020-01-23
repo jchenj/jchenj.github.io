@@ -7,7 +7,7 @@ date: 2020-01-22
 Today I took my deepest dive yet into Git and by the end of the day achieved a bunch of firsts working from the command line, including initializing a repo from existing code on my local machine and cloning a remote repo. 
 
 The main resources I used were:
-* [Learn Git Branching](https://learngitbranching.js.org/Git tutorial) - nice interactive exercises, great to see visual representations of the current & goal states of the branches. 
+* [Learn Git Branching](https://learngitbranching.js.org/) - nice interactive exercises, great to see visual representations of the current & goal states of the branches. 
 * [Git Tutorial for Beginners: Command-Line Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4) - packs a lot into half-hour video, very clear explanations & shows all steps in the terminal
 
 (Before even getting started I ran into an issue, as attempting to run Git resulted in an error like "xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at /Library/Developer/CommandLineTools/usr/bin/xcrun." It turned out that this problem was related to my recent update to macOS Catalina, and I needed to update Xcode Command-line Tools with `xcode-select --install`. The Stack Overflow post I found describing the problem and solution(s) is [here](https://stackoverflow.com/questions/52522565/git-is-not-working-after-macos-update-xcrun-error-invalid-active-developer-pa).(I may need to consult this in the future, as it sounds like this issue pops up after every macOS update.)
