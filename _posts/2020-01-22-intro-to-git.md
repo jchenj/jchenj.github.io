@@ -1,6 +1,6 @@
 ---
-layout: posts
-title: Intro to Git
+layout: post
+title: "Intro to Git"
 date: 2020-01-22
 ---
 
