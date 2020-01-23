@@ -10,11 +10,9 @@ The main resources I used were:
 * [Learn Git Branching](https://learngitbranching.js.org/Git tutorial) - nice interactive exercises, great to see visual representations of the current & goal states of the branches. 
 * [Git Tutorial for Beginners: Command-Line Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4) - packs a lot into half-hour video, very clear explanations & shows all steps in the terminal
 
-I should say that before even getting started I ran into an issue, as attempting to run Git resulted in an error like `xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at /Library/Developer/CommandLineTools/usr/bin/xcrun`. 
+(Before even getting started I ran into an issue, as attempting to run Git resulted in an error like "xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at /Library/Developer/CommandLineTools/usr/bin/xcrun." It turned out that this problem was related to my recent update to macOS Catalina, and I needed to update Xcode Command-line Tools with `xcode-select --install`. The Stack Overflow post I found describing the problem and solution(s) is [here](https://stackoverflow.com/questions/52522565/git-is-not-working-after-macos-update-xcrun-error-invalid-active-developer-pa).(I may need to consult this in the future, as it sounds like this issue pops up after every macOS update.)
 
-It turned out that this problem was related to my recent update to macOS Catalina, and I needed to update Xcode Command-line Tools with `xcode-select --install`. The Stack Overflow post I found describing the problem and solution(s) is [here](https://stackoverflow.com/questions/52522565/git-is-not-working-after-macos-update-xcrun-error-invalid-active-developer-pa).(I may need to consult this in the future, as it sounds like this issue pops up after every macOS update.)
-
-Anyway, back to the main event. Prior to today I'd had seen a demo of Git from the command line and listened to one podcast about it, but hadn't used it myself. I had set up a Git Hub account, set up, forked and modified repos using the web interface. 
+Anyway, prior to today I'd had seen a demo of Git from the command line and listened to one podcast about it, but hadn't used it myself. I had set up a Git Hub account, set up, forked and modified repos using the web interface. 
 
 ## Key achievements of the day
 * Set up global config variables for Git
@@ -27,24 +25,16 @@ Anyway, back to the main event. Prior to today I'd had seen a demo of Git from t
 
 ## Notes from today
 ### Working locally
-**Create branch**
-* `git branch <branch-name>`
-**Commit to branch**
-* `git commit <branch-name>` 
-**Force branch move**
-* `git branch -f <name-of-branch-to-move> <target-location>
-**Start working on branch**
-* `git checkout <branch-name>`
-**Create a new branch & checkout in one command**
-* `git checkout -b <branch-name>`
-**Move HEAD to specified commit**
-* `git checkout <commit-name>`
-**Merge**
-* `git merge <branch-name>`
-**Rebase**
-* `git rebase <branch-name>`
-**Relative refs**
-* Use `^` (one commit up) and `~N` (N commits up)
+* Create branch - `git branch <branch-name>`
+* Commit to branch - `git commit <branch-name>` 
+* Force branch move - `git branch -f <name-of-branch-to-move> <target-location>
+* Start working on branch -`git checkout <branch-name>`
+* Create a new branch & checkout in one command - `git checkout -b <branch-name>`
+* Move HEAD to specified commit -`git checkout <commit-name>`
+* Merge - `git merge <branch-name>`
+* Rebase -`git rebase <branch-name>`
+* Relative refs - Use `^` (one commit up) and `~N` (N commits up)
+
 **Reversing changes**
 * `git reset <new-location-of-branch-reference>` - works for local machines only, not remote branches that others are using
 * `git revert <location-of-changes-to-delete>` - creates a new commit that undoes changes of previous commit
@@ -61,18 +51,22 @@ Anyway, back to the main event. Prior to today I'd had seen a demo of Git from t
 * `git log` - see the commit just made 
 
 ### Working on remote repo
-**Clone a repo locally**
 * `git clone <remote-repo-url> <target-location>` - clones a remote repo to target directory
 * `git reset <filename>` - removes file from staging area
+
 **Viewing info about remote repo**
 * `git remote -v` - lists info about remote repo
 * `git branch -a` - lists all branches (locally & remotely)
+
 **Get changes from a remote repository**
 * `git fetch` 
-* Does not change local files. Seems to update all data, regardless of branch.
+* Does not change local files. 
+* Seems to update all data, regardless of branch.
+
 **Fetch & merge in one command**
 * `git pull`
 * Seems to work on all branches
+
 **Upload changes to remote**
 * `git push`
 * Will fail if the remote has been updated since version you have locally
