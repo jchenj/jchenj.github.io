@@ -16,6 +16,7 @@ Over the last two days I've continued working on the photo album scripts and mad
 `python3 #run Python \\
 import makeIndex  # import name of script without '.py'
 makeIndex.makeIndex('./other-photos', 'jpg') # call function with desired values as parameters`
+* I create a repo for the project on GitHub (private for now). This is now my first original project I'll be using version control on, hooray!
 
 **Challenges**
 * When I was researching how to format the index using a table, I read that this is an outdated method of doing page layout, which folks are generally advised to avoid. While I generally like to use best practices in my work, in this case I stuck with the table, as it was good practice for me and got me the results I was looking for. I hope to learn better ways to format pages down the line! 
