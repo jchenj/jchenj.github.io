@@ -18,16 +18,16 @@ Today I picked up the server-side web apps module at the point where we started 
 
 *Michael Kennedy (instructor)*: OK, let's download BootStrap using npm.    
 
-*Me*: What's BootStrap? (*search, search...*) What's npm? (*search, search...*) . 
-k, I'll run this BootStrap install command in the terminal... (*tap, tap*)...  
-Whaa, I don't have npm? What do I have to do to get it? (*search, search...*) . 
+*Me*: What's BootStrap? (*search, search...*) What's npm? (*search, search...*)  
+Ok, I'll run this BootStrap install command in the terminal... (*tap, tap*)...  
+Whaa, I don't have npm? What do I have to do to get it? (*search, search...*)  
 Ok, guess I need to install Node! Here I go to their website...(*tap, tap*)...  
-Ok, I'm downloading Node. I'm clicking to install it... Whaa, I'm getting this error, "Can’t be opened because Apple cannot check it for malicious software"! What's up with that?? (*search, search...*) . 
+Ok, I'm downloading Node. I'm clicking to install it... Whaa, I'm getting this error, "Can’t be opened because Apple cannot check it for malicious software"! What's up with that?? (*search, search...*)  
 OK, I've got the workaround. Installing Node... Looks like it worked! Time to check if it installed correctly...
 
-`$ which node` . 
-`/usr/bin/local/node` . 
-`$ node . 
+`$ which node`  
+`/usr/bin/local/node`  
+`$ node  
 ``>console.log('Node is running');`  
 `Node is running` . 
 
