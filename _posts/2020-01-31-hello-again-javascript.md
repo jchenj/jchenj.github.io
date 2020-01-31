@@ -15,20 +15,21 @@ It was in the most recent module on server-side web apps that I returned to Java
 As I resumed my "learn to code" mission in mid-2018, I tried out three languages: 1) a version of Scheme used in UBC's first programming course, CS 110, which I took as a MOOC on EdX, 2) Python, which I  dug into using Nina Zacharenko's fundementals course and the *Automate the Boring Stuff* book, and JavaScript. The latter was my most brief exposure - I went through only a handful of videos in the FullStack/Grace Hopper Institute's boot camp prep materials. Eventually, through, I decided to stick with Python as I found the *ABS* approach of focusing on the automation use case while learning Python highly relevant and felt like I was making good progress there. So I waved goodbye to JavaScript's semicolons, not knowing when or if we would meet again. 
 
 Today I picked up the server-side web apps module at the point where we started discussing static pages. The sequence went something like this:
-*Michael Kennedy (instructor)*: OK, let's download BootStrap using npm.\\
 
-*Me*: What's BootStrap? (*search, search...*) What's npm? (*search, search...*)\\
-Ok, I'll run this BootStrap install command in the terminal... (*tap, tap*)...\\
-Whaa, I don't have npm? What do I have to do to get it? (*search, search...*)\\
-Ok, guess I need to install Node! Here I go to their website...(*tap, tap*)...\\
-Ok, I'm downloading Node. I'm clicking to install it... Whaa, I'm getting this error, "Can’t be opened because Apple cannot check it for malicious software"! What's up with that?? (*search, search...*)\\
-OK, I've got the workaround. Installing Node... Looks like it worked! Time to check if it installed correctly...\\
-`$ which node`\\
-`/usr/bin/local/node`\\
-`$ node\\
-`> console.log('Node is running');`\\
-`Node is running`\\
-*Me: (realizing what just happened) Whaaa! Semicolon! I'm back to JavaScript!\\
+*Michael Kennedy (instructor)*: OK, let's download BootStrap using npm.    
+
+*Me*: What's BootStrap? (*search, search...*) What's npm? (*search, search...*) . 
+k, I'll run this BootStrap install command in the terminal... (*tap, tap*)...  
+Whaa, I don't have npm? What do I have to do to get it? (*search, search...*) . 
+Ok, guess I need to install Node! Here I go to their website...(*tap, tap*)...  
+Ok, I'm downloading Node. I'm clicking to install it... Whaa, I'm getting this error, "Can’t be opened because Apple cannot check it for malicious software"! What's up with that?? (*search, search...*) . 
+OK, I've got the workaround. Installing Node... Looks like it worked! Time to check if it installed correctly.  
+`$ which node` . 
+`/usr/bin/local/node` . 
+`$ node . 
+`> console.log('Node is running');`  
+`Node is running` . 
+*Me: (realizing what just happened) Whaaa! Semicolon! I'm back to JavaScript!  
 
 And that was the moment that, after months of sticking to Python my path converged with JS again - and now, it's not matter of a binary choice between learning language A or B, but a situation where both languages are combined in the same project, I get to see them in action together. I know I'll learn a lot about both in the process, and I feel very much up to the challenge. 
 
