@@ -12,7 +12,11 @@ While these detours can be a bit frustrating at times, for the most part it's be
 
 It was in the most recent module on server-side web apps that I returned to JavaScript today for the first time since choosing definitively to go with Python as my all-important "first language" in late 2018 or early 2019. 
 
-As I resumed my "learn to code" mission in mid-2018, I tried out three languages: 1) a version of Scheme used in UBC's first programming course, CS 110, which I took as a MOOC on EdX, 2) Python, which I  dug into using [Nina Zacharenko's *Learn Python* course](https://www.learnpython.dev/01-introduction/) and *Automate the Boring Stuff with Python*[https://automatetheboringstuff.com/#toc], and 3) JavaScript. The latter was my most brief exposure - I went through only a handful of videos in the FullStack/Grace Hopper Institute's [boot camp prep materials](https://www.fullstackacademy.com/bootcamp-prep). (At the time I think the boot camp prep materials were free; looks like they're all pay-to-access now.)
+As I resumed my "learn to code" mission in mid-2018, I tried out three languages: 
+
+1. A version of Scheme used in UBC's first programming course, CS 110, which I took as a MOOC on EdX
+2. Python, which I  dug into using [Nina Zacharenko's *Learn Python* course](https://www.learnpython.dev/01-introduction/) and [*Automate the Boring Stuff with Python*](https://automatetheboringstuff.com/#toc), and
+3. JavaScript, which was my most brief exposure. I went through only a handful of videos in the FullStack/Grace Hopper Institute's [boot camp prep materials](https://www.fullstackacademy.com/bootcamp-prep). (At the time I think the boot camp prep materials were free; looks like they're all pay-to-access now.)
 
 In the end, I decided to stick with Python as I found the *ABS* approach of focusing on the automation use case while learning Python highly relevant and felt like I was making good progress there. So I waved goodbye to JavaScript's semicolons, not knowing when or if we would meet again. 
 
@@ -30,7 +34,6 @@ Today I picked up the server-side web apps module at the point where we started 
 
 *Me*: (realizing what just happened) Whaaa! Semicolon! I'm back to JavaScript!  
 
-And that was the moment that, after months of sticking to Python my path converged with JS again - and now, it's not matter of a choice between learning language A or B, but a situation where both languages are combined in the same project. I get to see them in action together. I know I'll learn a lot about both in the process, and I'm excited for the challenge. 
+And that was the moment when, after months of sticking to Python, my path converged with JS again. I'm in a different place now that the last time - Im not thinking about choosing which of the two languages to learn, but rather combining both languages in the same project. I know I'll learn a lot about both in the process!
 
 I got BootStrap installed, and moving onwards! 
-
