@@ -72,7 +72,7 @@ Anyway, prior to today I'd had seen a demo of Git from the command line and list
 * Will fail if the remote has been updated since version you have locally
 * In this case `git fetch`, `git rebase o/master`, then `git push`
 * Or you can do `git fetch`, `git merge o/master`, `git push`
-* `git pull --rebase`is shorthand for `git fetch`, `git rebase`
+* `git pull --rebase` is shorthand for `git fetch`, `git rebase`
 
 **Pushing changes to remote branch - workflow**
 * `git diff` - show the changes made locally

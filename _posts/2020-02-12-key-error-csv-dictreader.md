@@ -4,7 +4,7 @@ title: "Deciphering KeyError when using csv.DictReader()"
 date: 2020-02-12
 ---
 
-While I've been blogging less recently, it's been busy & productive times. I finished the TalkPython course on "Mastering PyCharm" and have been putting my new PyCharm superpowers to work on a couple of new personal projects - a command-line password manager and a Flask web app - while also diving into a course on web development using Python. 
+While I've been blogging less recently, it's been busy & productive times. I finished the TalkPython course *Mastering PyCharm* and have been putting my new PyCharm powers to work on a couple of new personal projects - a command-line password manager and a Flask web app - while also diving into a course on web development using Python. 
 
 I've found that using Evernote for learning notes seems be better for my workflow than blogging, so I'll stick to using the blog for documenting wins of any size and aha moments - and I had a good one come up today during work on the password manager! 
 
