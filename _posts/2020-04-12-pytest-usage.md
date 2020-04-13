@@ -16,3 +16,7 @@ A few reminders & learning I gained from this experience:
 * Reminder that assumptions can be misleading on module usage. Two modules that "do the same thing" can still have significant differences in their usage. 
 * At the same time, using assumptions about how similar modules work can be a fine starting point for using a new module. I should just be prepared to check documentation and other resources if it turns out that these assumptions aren't valid. 
 * Finally, it's a good idea to monitor roughly how long I've spent trying to understand an issue on my own before looking to docs & resources. For a relatively small issue like the one I dealt with today, if I haven't hit on the solution in a few minutes, it's probably a good idea to check other resource to solve the issue, learn from it and move along. 
+
+#! TODO: link to API repo / course page
+#! TODO: link to pytest page
+Pytest usage: https://docs.pytest.org/en/latest/usage.html
