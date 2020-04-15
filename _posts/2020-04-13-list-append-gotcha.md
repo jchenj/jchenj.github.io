@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gotcha with list.append()"
-date: 2020-04-12
+date: 2020-04-13
 ---
 
 Today I continued working on my command line password manager program, implementing a couple of private methods for reading and writing files and refactoring the API methods to use these new methods. This is a step along the path to adding encryption functionality to the program. As I was refactoring the last API method, I ran into a quick gotcha related to list mutability in Python. 
