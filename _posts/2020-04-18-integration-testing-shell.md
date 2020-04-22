@@ -32,3 +32,15 @@ rm testfile
 echo "Done running tests"
 
 ````
+
+How to run shell script:
+need to make it runnable: `chmod +x <filename>`
+
+Then have three options:
+````bash <filename
+./script-name-here.sh
+OR
+sh script-name-here.sh
+OR
+bash script-name-here.sh
+````
