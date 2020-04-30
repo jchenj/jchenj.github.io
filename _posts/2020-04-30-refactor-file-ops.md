@@ -23,4 +23,4 @@ What challenges did I encounter?
 - For create_new_file() needed to move it up in the command line commands
 
 What did I learn from the experience? 
-Took both longer than expected & less time. Lot of details and bug checking. On the other hand, I didn't have to touch all code - many funcs didn't have to work with, and didn't have to change most or CL args and integration tests at all. Overall satisfying process and great outcome that program architecture makes more sense, and more flexible for future work. 
+Took both longer than expected & less time. Lot of details and bug checking. On the other hand, I didn't have to touch all code - many funcs didn't have to work with, and didn't have to change most or CL args and integration tests at all. Overall satisfying process and great outcome that program architecture makes more sense, and more flexible for future work.
