@@ -4,43 +4,43 @@ title: "First steps to integration testing using shell scripts"
 date: 2020-04-17
 ---
 
-First steps to integration testing. Now that quite extensive unit tests
+Now that the password manager program includes quite extensive unit testing, today I started working on adding integration testing. 
+ 
+ I did this by writing a shell script that runs through a sequence of program commands exactly as if I were entering them in the command line. 
+ 
+Until now I've mostly used Bash to run individual commands from the terminal. This was my first experience writing a shell script for testing. 
 
-Write shell script
+Writing the script was pretty straightforward. It starts with the ```#!/bin/bash``` line, similar to what I used when I wrote Python programs in IDLE and ran them from the terminal. 
 
-Did bash tutorial - only single lines in Bash. 
+(Also similar to this early Python experience, to make the script runnable I needed to enter `chmod +x <filename>` before running it for the first time. After that, I can run the script using one of:
 
-Wrote scripts for python
+`./script-name.sh`
+`sh script-name-here.sh` or
+`bash script-name-here.sh`
 
-Way to test code out as if user did.
+The equivalent to Python `print()` statements is `echo <message>` in Bash. I used a couple of these at the start and end of the script.
 
-So for only for unencryed because encrypted needs password. Might be able to do this by having passwords in a separate file and read them in as needed using a pipe`
+The bulk of the script consists of the sequence of commands:
 
-Important to remove the test file at end of each test sequence. 
-
+````python
+# Create new file
+  python3 passman.py -f testfile -nf
+# Create new account
+  python3 passman.py -f testfile -na bob
+# Get password for account
+  python3 passman.py -f testfile -g bob
+# Change password, specifying password length
+  python3 passman.py -f testfile -cp bob -l 4
+# Change password with specified password
+  python3 passman.py -f testfile -cp bob -sp 8080boat
+# Get password, printing to screen
+  python3 passman.py -f testfile -g bob -print
+#! Delete account
+  python3 passman.py -f testfile -d bob
 ````
-#!/bin/bash
 
-echo "Running tests..."
+It was important to removed the testfile at the end of the sequence (`rm testfile`), because the test will throw an error if it goes to create the file the next time and finds a file with the same name already exists. 
 
-python3 passman.py -f testfile -nf
-python3 passman.py -f testfile -na bob
-python3 passman.py -f testfile -cp bob
+In order to make the shell script runnable 
 
-rm testfile
-
-echo "Done running tests"
-
-````
-
-How to run shell script:
-need to make it runnable: `chmod +x <filename>`
-
-Then have three options:
-````bash <filename
-./script-name-here.sh
-OR
-sh script-name-here.sh
-OR
-bash script-name-here.sh
-````
+So far the integration tests are only for unencrypted files. In order to test encrypted files< I'll need to be able to supply the password when prompted by the prgram. I could do this manually or by storign the passwords in a separate file and piping them in when prompted. I will address this in the future. For now, integration for the unencrypted files is working! 
