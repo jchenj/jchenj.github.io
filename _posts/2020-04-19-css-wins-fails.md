@@ -4,9 +4,13 @@ title: "CSS Wins & Fails"
 date: 2020-04-19
 ---
 
-Added FontAwesome icon. 
-Needed to add link to HTML - to CDN to access the link. This wasn't in demo, needed to google around for it
-What is CloudFlare? 
+I was working on making a navbar using CSS today and had a mix of wins and fails. 
+
+###Wins
+- When I left off working on this the last time I was trying to add a FontAwesome icon and was missing the stylesheet link. While the docs didn't describe that this link was needed or where to find it, I found it on another site and put it in the HTML file, getting the icon. 
+
+###Fails
+
 
 And failure - got the icon in but couldn't get it to align on the right though rest of icons on left. I looked at several websites. Decided to move ahead - maybe  will learn this later. 
 
