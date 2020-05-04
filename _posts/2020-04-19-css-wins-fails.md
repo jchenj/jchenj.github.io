@@ -9,7 +9,7 @@ I was working on making a navbar using CSS today and had a mix of wins and fails
 One win and a couple fails from today:
 
 ###Win
-- When I left off working on the navbar the last time I was trying to add a FontAwesome icon and was missing the stylesheet link. The FontAwesome docs didn't make it clear to me where to get a link if a project doesn't have it installed locally. I eventually learned about how one can getting links to web resources using Content Delivery Networks (CDNs), found a link to FontAwesome icon resources on [cdnjs.com](cdnjs.com), and added this link to my project's HTML file, getting access to the icon. 
+- When I left off working on the navbar the last time I was trying to add a FontAwesome icon and was missing the stylesheet link. The FontAwesome docs didn't make it clear to me where to get a link if a project doesn't have it installed locally. I eventually learned about how one can getting links to web resources using [Content Delivery Networks (CDNs)](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/), found a link to FontAwesome icon resources on [cdnjs.com](cdnjs.com), and added this link to my project's HTML file, getting access to the icon. 
 
 ###Fails
 - I wanted to get the search icon to float on the right hand side of the navbar while the other items stayed aligned left. I wasn't able to get this to work, despite trying a bunch of things and trying to apply what I'd learned about creating floating elements from the demo. 
