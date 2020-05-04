@@ -22,4 +22,4 @@ And what happened when it came time to refactor 'add_account' to allow a specifi
    
 I've heard a lot about design patterns - this was first experience using one. Will be interesting to learn what this is called, and learn more examples
 
-Result"
+Result
