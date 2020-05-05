@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Updating global variables in Python"
+date: 2020-05-03
+---
+
 Working on turning Flask app to Quart app
 Weather service needed API key. 
 
