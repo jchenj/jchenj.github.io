@@ -4,22 +4,81 @@ title: "Design patterns"
 date: 2020-04-20
 ---
 
-Situation: Original change password func only allowed for a randomly generated password. Wanted to have an option to set the password
+While I'd heard about design patterns before today, today was the first time I used one in refactoring my code. 
 
-Task: Refactor the change_password() function
+I was working on enhancing the `change_password` function in the password manager program I'm working on. The original version of the function only allowed one to change the password to one randomly generated password. We wanted the user to have the option to set the password. 
 
-Action: Considered some options, extending the change_pw function. Basically adding some additional conditions. Saying if only the password parameter was set, then to set with that specific pw. Otherwise, if alphabet and pw length were given, to autogenerate random password
+### Original version
+```python
+def change_password(self, alphabet, password_length):
+    """
+    Changes password of specified file to a new password of specified length from ALPHABET
+    Assumes account name exists in file
+    Assumes password length is integer > 0
+    :param alphabet: string of full alphabet
+    :param password_length: length of password
+    :return: None
+    side effect: file with new password for specified account
+    """
+    if not self.check_if_account_exists():
+        raise RuntimeError("Account '{}' does not exist".format(self.acname))
+    new_password = create_password(alphabet, password_length)
+    # read in the password file
+    data = self._readFile()
+    for row in data:
+        if row[0].strip() == self.acname:
+            row[1] = new_password
+    self._writeFile(data)
+    return
+```
 
-Learned that there was a cleaner way to do this, using design pattern. 
-Separate the setting of password (either spec or random) from the changing of file with new pw. Ended up pulling out a func for change_pw and writing two new funcs for set_pw_rand and set_pw (specified)
+As I started working on this, my initial approach was to add some additional conditions to the the `change_password` function. I would add a `password` parameter to the function. If this parameter set, then the password to that. Otherwise, if the `alphabet` and `password_length` parameters were set, then the program would generate and set a random password. While it felt unwieldy to work with these three parameters, I didn't have a better idea initially. 
 
-How did I refer to these funcs in the main func? 
+On talking the problem over, I learned that there was a cleaner way to do this. I could separate the creation of the new password (whether specified or random) from updating the file with the new password. I pulled out the creation of the new password into two new functions, `set_pw` for specified passwords and `set_pw_rand` for random passwords. The purpose of `change_pw` changed to only include updating the file with the passwords created by the other two functions.
 
-And what happened when it came time to refactor 'add_account' to allow a specified func? 
-   Thought about adding same design pattern, but didn't need to 
-   With just two additional lines of code in main func, said if there's a setpw param, then can setpw with it
-   This was lot shorter and possible because I had already pulled out that fun
-   
-I've heard a lot about design patterns - this was first experience using one. Will be interesting to learn what this is called, and learn more examples
+At the end of the day, the three functions were:
 
-Result
+### New version 
+```python
+
+def set_pw_rand(self, alphabet, password_length):
+    """
+    Sets password of account to a new random password of specified length from ALPHABET
+    Assumes password length is integer > 0
+    :param alphabet: string of full alphabet
+    :param password_length: length of password
+    :return new_password: string
+    """
+    new_password = create_password(alphabet, password_length)
+    self._change_password(new_password)
+
+def set_pw(self, specified_pass):
+    """
+    Sets password of specified account to a new specified password
+    Assumes account names exists in file
+    :param specified_pass: specified new password (string)
+    :return: new_password: string
+    """
+    self._change_password(specified_pass)
+
+def _change_password(self, new_password):
+    """
+    Changes password of specified account to new (pre-set) password
+    Assumes account name exists in file
+    :param new_password: new password (string)
+    :return: None
+    :side effect: file with account updated with new password
+    """
+    if not self.check_if_account_exists():
+        raise RuntimeError("Account '{}' does not exist".format(self.acname))
+    # read in the password file
+    data = self._readFile()
+    for row in data:
+        if row[0].strip() == self.acname:
+            row[1] = new_password
+    self._writeFile(data)
+    return
+```
+
+I liked how splitting up the two tasks done by the original function made the new, enhanced version much easier to work with. I'm looking forward to learning more about design patterns and how to apply them in my code. 
+ 
