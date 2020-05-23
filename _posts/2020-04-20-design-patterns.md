@@ -36,7 +36,7 @@ As I started working on this, my initial approach was to add some additional con
 
 On talking the problem over, I learned that there was a cleaner way to do this. I could separate the creation of the new password (whether specified or random) from updating the file with the new password. I pulled out the creation of the new password into two new functions, `set_pw` for specified passwords and `set_pw_rand` for random passwords. The purpose of `change_pw` changed to only include updating the file with the passwords created by the other two functions.
 
-At the end of the day, the three functions were:
+At the end of the day, the three functions I wrote were:
 
 ### New version 
 ```python
