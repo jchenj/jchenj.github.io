@@ -21,7 +21,8 @@ Reads from standard input, writes to standard output and file
 
 Example from my project:
 ```
-jchen@ribka:~/Desktop/FOSS/beeware/briefcase2/briefcase/src/macOS/Hello World/Hello World.app/Contents/MacOS$ ./Hello\ World | tee nv_direct.txt
+jchen@ribka:~/Desktop/FOSS/beeware/briefcase2/briefcase/src/macOS/Hello World/Hello World.app
+/Contents/MacOS$ ./Hello\ World | tee nv_direct.txt
 ```
 Run scripts, display output on console and save to file nv_direct.txt
 
@@ -32,7 +33,9 @@ Display differences between two files
 
 Example from my project:
 ```
-(.env) jchen@ribka:~/Desktop/FOSS/beeware/briefcase2/briefcase/src/macOS/Hello World/Hello World.app/Contents/MacOS$ diff -y --suppress-common-lines no_nv_direct.txt nv_direct.txt | tee diff.txt
+(.env) jchen@ribka:~/Desktop/FOSS/beeware/briefcase2/briefcase/src/macOS/Hello World
+/Hello World.app/Contents/MacOS$ diff -y --suppress-common-lines 
+no_nv_direct.txt nv_direct.txt | tee diff.txt
 ```
 Compare two files & print different lines only side-by-side
 [man page for `diff`](https://ss64.com/bash/diff.html)
