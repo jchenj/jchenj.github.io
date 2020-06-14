@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Printing shell output""
+title: "Printing shell output"
 date: 2020-06-14
 ---
 
