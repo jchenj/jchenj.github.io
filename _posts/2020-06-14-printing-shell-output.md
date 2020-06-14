@@ -16,10 +16,10 @@ For the past two weeks I've been working on my most extensive [open source
      helpful for saving script output a file and later comparing the
       differences across two files:
       
-### `tee`
+## `tee`
 Reads from standard input, writes to standard output and file
 
-Example from my project:
+Example from project:
 ```
 jchen@ribka:~/Desktop/FOSS/beeware/briefcase2/briefcase/src/macOS/Hello World/Hello World.app
 /Contents/MacOS$ ./Hello\ World | tee nv_direct.txt
@@ -28,10 +28,10 @@ Run scripts, display output on console and save to file nv_direct.txt
 
 [man page for `tee`](https://ss64.com/bash/tee.html)
 
-### `diff`
+## `diff`
 Display differences between two files
 
-Example from my project:
+Example from project:
 ```
 (.env) jchen@ribka:~/Desktop/FOSS/beeware/briefcase2/briefcase/src/macOS/Hello World
 /Hello World.app/Contents/MacOS$ diff -y --suppress-common-lines 
