@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Printing shell output""
-date: 2020-06-11
+date: 2020-06-14
 ---
 
 For the past two weeks I've been working on my most extensive [open source
